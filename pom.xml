@@ -2693,6 +2693,14 @@
     </profile>
 
     <profile>
+      <id>nomad</id>
+      <modules>
+        <module>resource-managers/nomad/test-apps</module>
+        <module>resource-managers/nomad</module>
+      </modules>
+    </profile>
+
+    <profile>
       <id>hive-thriftserver</id>
       <modules>
         <module>sql/hive-thriftserver</module>

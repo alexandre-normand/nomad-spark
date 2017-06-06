@@ -18,7 +18,7 @@ Users can also download a "Hadoop free" binary and run Spark with any Hadoop ver
 Scala and Java users can include Spark in their projects using its Maven coordinates and in the future Python users can also install Spark from PyPI.
 
 
-If you'd like to build Spark from 
+If you'd like to build Spark from
 source, visit [Building Spark](building-spark.html).
 
 
@@ -82,6 +82,7 @@ options for deployment:
 * [Apache Mesos](running-on-mesos.html)
 * [Hadoop YARN](running-on-yarn.html)
 * [Kubernetes](running-on-kubernetes.html)
+* [Nomad](running-on-nomad.html)
 
 # Where to Go from Here
 
@@ -114,6 +115,7 @@ options for deployment:
       [Apache Mesos](http://mesos.apache.org)
   * [YARN](running-on-yarn.html): deploy Spark on top of Hadoop NextGen (YARN)
   * [Kubernetes](running-on-kubernetes.html): deploy Spark on top of Kubernetes
+  * [Nomad](running-on-nomad.html): run Spark on top of Nomad
 
 **Other Documents:**
 

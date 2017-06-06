@@ -196,6 +196,11 @@ private[spark] abstract class YarnSchedulerBackend(
   private class YarnDriverEndpoint(rpcEnv: RpcEnv, sparkProperties: Seq[(String, String)])
       extends DriverEndpoint(rpcEnv, sparkProperties) {
 
+    override protected def synchronizedOnNewExecutorId(executorId: String): Unit =
+      if (currentExecutorIdCounter < executorId.toInt) {
+        currentExecutorIdCounter = executorId.toInt
+      }
+
     /**
      * When onDisconnected is received at the driver endpoint, the superclass DriverEndpoint
      * handles it by assuming the Executor was lost for a bad reason and removes the executor
